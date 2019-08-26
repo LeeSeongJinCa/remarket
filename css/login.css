@@ -1,6 +1,3 @@
-html {
-    -webkit-text-size-adjust: none;
-}
 #layout {
     height: 100vh;
     display: flex;
@@ -8,18 +5,10 @@ html {
     justify-content: center;
     align-items: center;
 }
-#header {
-    text-align: center;
-}
-#headerInner {
-    width: 80%;
-    margin: 0 auto;
-    padding: 10px;
-    border-bottom: 1px solid #707070;
-}
 #headerInner > img {
     width: 80%;
 }
+
 #loginText {
     text-align: center;
     padding: 40px;
