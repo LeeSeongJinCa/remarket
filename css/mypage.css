@@ -1,0 +1,195 @@
+#mypage {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+
+    margin-top: 100px;
+}
+
+/** userInfo */
+#userInfo {
+    width: 35%;
+    padding-top: 100px;
+}
+#userProfileImage {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid #c0c0c0;
+    box-shadow: 0 0 10px #c0c0c0;
+}
+#userNickname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+#userNickname > img {
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}
+#aboutItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sellItemCount, #exchangeItemCount {
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 15px;
+    margin: 10px 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    box-shadow: 0px 1px 10px #c7c7c7;
+}
+
+/** itemInfo */
+#itemInfo {
+    position: relative;
+    width: 65%;
+    box-shadow: 0 3px 10px #7c7c7c;
+    border-radius: 0 0 10px 10px;
+    z-index: 100;
+}
+#itemInfoInner {
+    text-align: left;
+    padding: 40px 50px;
+}
+#itemCategory {
+    position: absolute;
+    top: -40.4px;
+    display: flex;
+    left: 0;
+}
+.category {
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 2px #747474;
+    cursor: pointer;
+    margin: 0 1px;
+}
+/* 클릭된 div에게  
+background-color: #fff;
+color: #ff0000; 
+스타일 적용 */
+/* .categoryMyInfo {
+    background-color: #fff;
+    color: #ff0000;
+} */
+.categoryCurrentSale {
+    background-color: #fff;
+    color: #ff0000;
+}
+.itemDate {
+    margin: 0;
+    font-size: 13px;
+    color: #797979;
+    margin-bottom: 10px;
+}
+.item {
+    display: flex;
+    border: 1px solid #202020;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px #9b9b9b;
+}
+.userFace {
+    width: 80px;
+}
+.userFace > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+.userRelation {
+    margin: 0 30px;
+}
+.itemLocation {
+    display: flex;
+    justify-content: flex-start;
+}
+.itemLocation > img {
+    width: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.itemLocation > p {
+    font-size: 5px;
+    line-height: 30px;
+    color: #797979;
+}
+.exchangeUser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exchangeUser > img {
+    width: 30px;
+    margin: 0 10px;
+}
+.exchangeUser > p, .exchangeUser > h1 {
+    font-size: 20px;
+}
+.exchangeUser > h1 {
+    font-weight: 500;
+}
+.exchangeUser > p {
+    color: #ff0000;
+    font-weight: 300;
+}
+.itemButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forLeftBorder {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    border-left: 1px solid black;
+}
+.itemButton > .forLeftBorder > button {
+    border: 0;
+    border-radius: 7px;
+    height: 27px;
+    width: 50px;
+    margin: 0 10px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+.edit {
+    border: 1px solid #575757 !important;
+    color: #000;
+    background-color: #fff;
+}
+.delete {
+    background-color: #FF6356;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
