@@ -1,11 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+* {
+    font-family: 'Noto Sans KR', sans-serif !important;
+}
+html { 
+    scrollbar-arrow-color: #efefef;
+
+    scrollbar-Track-Color: #efefef; 
+    scrollbar-base-color: #dfdfdf;
+
+    scrollbar-Face-Color: #dfdfdf;
+
+    scrollbar-3dLight-Color: #dfdfdf;         
+    scrollbar-DarkShadow-Color: #dfdfdf;
+
+    scrollbar-Highlight-Color: #dfdfdf;
+
+    scrollbar-Shadow-Color: #dfdfdf;
+}
+/* Chrome, Safari용 스크롤 바 */
+::-webkit-scrollbar {width: 6px; height: 12px; }
+::-webkit-scrollbar-button:start:decrement, 
+::-webkit-scrollbar-button:end:increment {display: none;}
+::-webkit-scrollbar-track { background: #ffffff; border-radius: 100px; }
+::-webkit-scrollbar-thumb { background: #7c7c7c; border-radius: 100px; }
 body {
     background-color: #f9f9f9;
 }
 #mypage {
     width: 1140px;
-    margin: 0 auto;
+    margin: 50px auto;
     display: flex;
-    margin-top: 100px;
 }
 
 /** userInfo */
@@ -38,11 +62,6 @@ body {
     height: 10px;
     margin-left: 5px;
 }
-#aboutItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #sellItemCount, #exchangeItemCount {
     border: 1px solid #d3d3d3;
     text-align: center;
@@ -59,20 +78,27 @@ body {
 #itemInfo {
     position: relative;
     width: 65%;
-    box-shadow: 0 3px 10px #7c7c7c;
-    border-radius: 0 0 10px 10px;
+    box-shadow: 5px 7px 5px #7c7c7c;
+    border-radius: 0 5px 5px 10px;
     z-index: 100;
+    border: 1px solid #707070;
     background-color: #fff;
 }
-#itemInfoInner {
+
+#itemInfoInner, #itemProfileInner {
     text-align: left;
-    padding: 40px 50px;
+    padding: 20px 50px;
+    height: 25rem;
+}
+#itemInfoInner {
+    overflow-y: scroll;
 }
 #itemCategory {
     position: absolute;
-    top: -40.4px;
+    top: -41px;
     display: flex;
-    left: 0;
+    left: -1px;
+    user-select: none;
 }
 .category {
     text-align: center;
@@ -80,14 +106,20 @@ body {
     height: 40px;
     line-height: 40px;
     border-radius: 10px 10px 0 0;
-    box-shadow: 0 0 2px #747474;
+    border: 1px solid #707070;
+    border-bottom: 0;
     cursor: pointer;
-    margin: 0 1px;
+}
+.category > p {
+    color: #707070;
 }
 .clicked {
     background-color: #fff;
-    color: #ff0000;
 }
+.clicked > p {
+    color: #ff6356 !important;
+}
+/** itemList */
 .itemDate {
     margin: 0;
     font-size: 13px;
@@ -96,9 +128,8 @@ body {
 }
 .item {
     display: flex;
-    border: 1px solid #202020;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     box-shadow: 0 2px 4px #9b9b9b;
 }
 .userFace {
@@ -142,7 +173,7 @@ body {
     font-weight: 500;
 }
 .exchangeUser > p {
-    color: #ff0000;
+    color: #ff6356;
     font-weight: 300;
 }
 .itemButton {
@@ -175,11 +206,54 @@ body {
     background-color: #FF6356;
     color: #fff;
 }
-
-
-
-
-
+/**  */
+#userProfile {
+    border-bottom: 1px solid #707070;
+    padding: 10px;
+}
+#userProfile > div {
+    display: flex;
+    margin-bottom: 40px;
+}
+#userProfile > div > div {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    color: #0e0e0e;
+    font-weight: normal;
+}
+#userProfile > div > input {
+    width: 450px;
+    color: #0e0e0e;
+    font-weight: lighter;
+    font-size: 13px;
+    outline: none;
+    border: 0;
+}
+#userProfile > div > input::placeholder {
+    color: #f88379;
+}
+#editUserInfo {
+    text-align: right;
+}
+#editUserInfo > button {
+    background-color: #ff6356;
+    color: #f9f9f9;
+    border: 0;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 15px;
+    box-shadow: 0 0 3px #707070;
+}
+#editUserInfo > button > img {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
 
 
 
