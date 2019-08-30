@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>upload page</title>
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    
+    <div id="upload">
+
+        <div class="inputInfoTitle">정보 입력</div>
+        <form id="inputInfo">
+            <div id="inputInfoLeft" class="inputInfo">
+                <div id="category">
+                    <div>카테고리</div>
+                    <select name="selectCategory" id="selectCategory">
+                        <option value="카테고리" selected disabled>카테고리</option>
+                        <option value="가전제품">가전제품</option>
+                        <option value="생활용품">생활용품</option>
+                        <option value="기타">기타</option>
+                    </select>
+                </div>
+                <div id="itemName">
+                    <div>상품명</div>
+                    <input type="text" placeholder="상품명을 입력하세요"/>
+                </div>
+                <div id="price">
+                    <div>가격</div>
+                    <input type="text" placeholder="가격"/>
+                    <div id="deliverPrice">
+                        <input id="checkbox" type="checkbox" />
+                        <label for="checkbox">택배비 포함</label>
+                    </div>
+                </div>
+                <div id="explain">
+                    <div>설명</div>
+                    <textarea placeholder="상품에 대한 설명을 적으세요" name="" id=""></textarea>
+                </div>
+            </div>
+
+            <div id="inputInfoRight" class="inputInfo">
+                <div id="exchangeItem">
+                    <div>교환상품</div>
+                    <input type="text" placeholder="교환을 원하시는 상품"/>
+                </div>
+                <div id="explain">
+                    <div>설명</div>
+                    <textarea placeholder="상품에 대한 설명을 적으세요"></textarea>
+                </div>
+                <div id="relativeTag">
+                    <div>연관태그</div>
+                    <input type="text" placeholder="ex) #선풍기..."/>
+                </div>
+                <div id="itemMount">
+                    <div>수량</div>
+                    <input type="text" placeholder="1"/>
+                </div>
+            </div>
+
+        </form>
+
+
+        <div id="uploadImage">
+            
+        </div>
+    </div>
+
+    <script src="js/upload.js"></script>
+</body>
+</html>

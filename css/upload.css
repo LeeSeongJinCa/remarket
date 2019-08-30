@@ -1,0 +1,86 @@
+#upload {
+    border: 1px solid red;
+    width: 1140px;
+    height: 200vh;
+    margin: auto;
+    padding: 10px 20px;
+}
+.inputInfoTitle {
+    margin: 50px 0 20px 0;
+    font-size: 30px;
+}
+#inputInfo {
+    display: flex;
+}
+.inputInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+.inputInfo > div {
+    position: relative;
+    display: flex;
+    margin: 15px 0;
+}
+.inputInfo > div > div {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+.inputInfo > div > textarea {
+    resize: none;
+    height: 200px;
+}
+.inputInfo > div > input, .inputInfo > div > select {
+    font-size: 15px;
+}
+.inputInfo > div > input, 
+.inputInfo > div > select, 
+.inputInfo > div > textarea {
+    border: 1px solid #0e0e0e;
+    width: 400px;
+    padding: 5px 10px;
+    outline: none;
+}
+.inputInfo > div > input::placeholder, 
+.inputInfo > div > select, 
+.inputInfo > div > textarea::placeholder {
+    color: #f88379;
+    font-size: 13px;
+}
+#category > select {
+    width: 150px;
+}
+#price > input {
+    width: 150px;
+}
+#deliverPrice {
+    position: absolute;
+    left: 100px;
+    bottom: -35px;
+    font-size: 10px;
+}
+#deliverPrice > input, #deliverPrice > label {
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+}
+#itemMount > input {
+    width: 150px;
+}
+
+#uploadImage {
+    height: 500px;
+    width: 1140px;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+#uploadImage::before {
+    content: "";
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+    border-bottom: 1px solid #707070;
+}
