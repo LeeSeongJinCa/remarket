@@ -182,6 +182,7 @@
 #userProfile {
     border-bottom: 1px solid #707070;
     padding: 10px;
+    height: 300px;
 }
 #userProfile > div {
     display: flex;

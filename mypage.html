@@ -30,8 +30,8 @@
                 </div>
             </div>
             <div class="MainHeaderButtonDiv">
-                <input type="button" value="등록하기" class="MainheaderButtonDiv" />
                 <input type="button" value="구매하기" class="MainheaderButtonDiv" />
+                <input type="button" value="등록하기" class="MainheaderButtonDiv" />
                 <input type="button" value="마이페이지" class="MainheaderButtonDiv" />
                 <input type="button" value="로그인" class="MainheaderButtonDiv" />
                 <input type="button" value="회원가입" class="MainheaderButtonDiv" />
@@ -61,7 +61,23 @@
                 </div>
             </div>
             <div id="itemWrap">
-                <div id="itemInfoInner">
+                <div id="itemProfileInner">
+                    <form id="userProfile">
+                        <div id="name">
+                            <div><strong>이름</strong></div>
+                            <input type="text" placeholder="이름을 입력해주세요. (홍길동)">
+                        </div>
+                        <div id="tel">
+                            <div><strong>전화번호</strong></div>
+                            <input type="tel" placeholder="전화번호를 입력해주세요. (010-1234-5678)">
+                        </div>
+                    </form>
+                    <div id="editUserInfo">
+                        <button>회원정보수정<img src="img/edit (2).svg" alt="edit"></button>
+                    </div>
+                </div>
+
+                <!-- <div id="itemInfoInner">
                     <div class="itemList">
                         <p class="itemDate">2018년 06년 09일</p>
                         <div class="item">
@@ -88,35 +104,8 @@
                             </div>
                         </div>
                     </div>
-                    
-                </div>
-                <!-- <div id="itemProfileInner">
-                    <form id="userProfile">
-                        <div id="name">
-                            <div><strong>이름</strong></div>
-                            <input type="text" placeholder="이름을 입력해주세요. (홍길동)">
-                        </div>
-                        <div id="tel">
-                            <div><strong>전화번호</strong></div>
-                            <input type="tel" placeholder="전화번호를 입력해주세요. (010-1234-5678)">
-                        </div>
-                        <div id="email">
-                            <div><strong>이메일</strong></div>
-                            <input type="email" placeholder="이메일을 입력해주세요. (hongildong@naver.com)">
-                        </div>
-                        <div id="address1">
-                            <div><strong>주소</strong></div>
-                            <input type="text" placeholder="주소를 입력해주세요. (서울특별시 종로구 세종대로 종로1가)">
-                        </div>
-                        <div id="address2">
-                            <div></div>
-                            <input type="text" placeholder="상세주소를 입력해주세요.">
-                        </div>
-                    </form>
-                    <div id="editUserInfo">
-                        <button>회원정보수정<img src="img/edit (2).svg" alt="edit"></button>
-                    </div>
                 </div> -->
+                
             </div>
         </div>
     </div>
@@ -165,6 +154,8 @@
             <button type="button" id="finish" onclick="uploadFinish();">상품 등록</button>
         </div>
     </div>
+
+    
 
     <script src="js/mypage.js"></script>
     <script src="js/upload.js"></script>

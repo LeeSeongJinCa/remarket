@@ -36,10 +36,13 @@
 .listItem {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+}
+.ListElementDiv {
+    width: 25%;
 }
 .ListElement{
-    width:260px;
+    width: 260px;
+    margin: 25px auto;
     border-radius: 10px;
     transition: .3s;
 }
@@ -48,7 +51,6 @@
     box-shadow: 0 5px 10px #acacac;
 }
 .ListElementImg{
-    width: 260px;
     height: 200px;
     border-radius: 10px 10px 0 0;
 }
@@ -60,8 +62,8 @@
     padding: 0 10px 7px 10px;
     border: 1px solid #70707070;
     border-radius: 0 0 10px 10px;
+    .ListElementText > div {
 }
-.ListElementText > div {
     margin-top: 20px;
 }
 .flexDiv {
