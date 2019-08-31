@@ -1,7 +1,3 @@
-/*
-요소 클릭 -> 요소에 맞는 창으로 교체, 요소의 css 변경
-*/
-
 window.onload = () => {
     let page = localStorage.getItem('listPage');
     if(page == 1) {
@@ -11,6 +7,7 @@ window.onload = () => {
         categoryClassChange(myInfo, CurrentSale);
         itemDisplay(itemProfileInner, itemInfoInner);
     } else {
+        console.log(page);
         return console.log('Error');
     }
 }

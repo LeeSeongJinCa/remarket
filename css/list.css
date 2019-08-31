@@ -1,0 +1,120 @@
+#list {
+    width: 1300px;
+    margin: 0 auto;
+}
+/* listTop */
+#listTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 15px;
+    border-bottom: 1px solid #707070;
+}
+#listTop > div {
+    font-size: 25px;
+    font-weight: 500;
+}
+#listTop > div > select {
+    width: 120px;
+    color: #f88379;
+    padding: 5px 10px;
+}
+/* listBottom */
+.list {
+    padding: 30px 0;
+    border-bottom: 1px solid #70707070;
+}
+.listBottomTitle {
+    margin-bottom: 30px;
+}
+.listBottomTitle > span {
+    font-size: 20px;
+    color: #707070;
+}
+.listBottomTitle > img {
+    width: 25px;
+}
+.listItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ListElement{
+    width:260px;
+    border-radius: 10px;
+    transition: .3s;
+}
+.ListElement:hover{
+    transform: translate(0 ,-10px);
+    box-shadow: 0 5px 10px #acacac;
+}
+.ListElementImg{
+    width: 260px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+.ListElementImg > img {
+    width: 100%;
+    height: 100%;
+}
+.ListElementText {
+    padding: 0 10px 7px 10px;
+    border: 1px solid #70707070;
+    border-radius: 0 0 10px 10px;
+}
+.ListElementText > div {
+    margin-top: 20px;
+}
+.flexDiv {
+    display:flex;
+    justify-content: space-between;
+}
+.ListElementName {
+    font-size: 22px;
+}
+.ListElementBuyDayDiv{
+    display:flex;
+    align-items:center;
+}
+.ListElementBuyDayText{
+    font-size:10px;
+    color:#EB5242;
+    margin: 0 5px;
+}
+.ListElementPoint {
+    font-size: 18px;
+}
+.point {
+    font-size:14px;
+}
+.ListElementAdderssDiv{
+    width:100%;
+    display:flex;
+    margin-top: 25px !important;
+}
+.ListElementAdderssDiv > img{
+    width:10px;
+    height:18px;
+    margin-right: 5px;
+}
+.ListElementAdderssDiv > p{
+    font-size:12px;
+    color:gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

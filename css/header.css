@@ -1,0 +1,79 @@
+#header {
+    width: 100%;
+}
+.MainHeaderDiv{
+    width: 1440px;
+    height: 100px;
+    margin: 0 auto 30px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #707070;
+}
+.MainHeaderLogoDiv {
+    height: 50px;
+}
+.MainHeaderLogoDiv > img{
+    height: 100%;
+}
+
+.MainHeaderSearchDiv{
+    outline:none;
+    border:3px rgb(253, 100, 100) solid;
+    width:35rem;
+    height:2.5rem;
+    border-radius: 5px;
+}
+
+.MainHeaderSearchInputDiv{
+    display: flex;
+    width:35rem;
+    height:2.25rem;
+    margin:0;
+}
+
+.MainHeaderSearchInput{
+    outline:none;
+    width:31.5rem;
+    height:2.25rem;
+    font-size:1rem;
+    border:none;
+    padding: 0 0.5rem;
+}
+.MainSearchInputIcon{
+    width:2rem;
+    height:2rem;
+    padding:6px;
+    margin-left:5px;
+}
+
+.MainHeaderSearchInputIconDiv{
+    width:3rem;
+    height:2.5rem;
+    display:inline-block;
+    background-color:rgb(253, 100, 100);
+}
+
+.MainHeaderButtonDiv{
+    display:flex;
+    justify-content: center;
+    height:1.5rem;
+    width:20rem;
+}
+
+#CanNone{
+    display:none;
+}
+.MainHeaderButtonDiv input{
+    border:none;
+    margin-left:1.5rem;
+    background-color:white;
+    color:#707070;
+    font-size:1rem;
+    cursor: pointer;
+}
+.MainHeaderUnderBar{
+    width:90%;
+    height:2px;
+    background-color:#707070;
+}

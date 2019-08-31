@@ -8,9 +8,37 @@
     <title>mypage</title>
     <link rel="stylesheet" href="css/mypage.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/upload.css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
+
+    <div id="header">
+        <div class="MainHeaderDiv">
+            <div class="MainHeaderLogoDiv">
+                <img src="img/logo_coral.png" class="MainLogo" />
+            </div>
+            <div class="MainHeaderSearchDiv">
+                <div class="MainHeaderSearchInputDiv">
+                    <input type="text" class="MainHeaderSearchInput" placeholder="상품 검색" />
+                    <div class="MainHeaderSearchInputIconDiv">
+                        <img src="img/lens.png" class="MainSearchInputIcon" />
+                    </div>
+                </div>
+            </div>
+            <div class="MainHeaderButtonDiv">
+                <input type="button" value="등록하기" class="MainheaderButtonDiv" />
+                <input type="button" value="구매하기" class="MainheaderButtonDiv" />
+                <input type="button" value="마이페이지" class="MainheaderButtonDiv" />
+                <input type="button" value="로그인" class="MainheaderButtonDiv" />
+                <input type="button" value="회원가입" class="MainheaderButtonDiv" />
+            </div>
+        </div>
+    </div>
+
     <div id="mypage">
         <div id="userInfo">
             <div id="userInfoInner">
@@ -23,7 +51,6 @@
                 </div>
             </div>
         </div>
-
         <div id="itemInfo">
             <div id="itemCategory">
                 <div id="categoryMyInfo" class="category">
@@ -33,11 +60,8 @@
                     <p>판매 중인 물건</p>
                 </div>
             </div>
-
             <div id="itemWrap">
-
                 <div id="itemInfoInner">
-
                     <div class="itemList">
                         <p class="itemDate">2018년 06년 09일</p>
                         <div class="item">
@@ -65,157 +89,8 @@
                         </div>
                     </div>
                     
-
-                    <div class="itemList">
-                        <p class="itemDate">2018년 06년 09일</p>
-                        <div class="item">
-                            <div class="userFace">
-                                <img src="https://cdn.faceplusplus.com/mc-official/scripts/demoScript/images/demo-pic4.jpg" alt="userFace">
-                            </div>
-                            <div class="userRelation">
-                                <div class="itemLocation">
-                                    <img src="img/maps-and-flags.svg" alt="marker">
-                                    <p>대전광역시 유성구 장동</p>
-                                </div>
-                                <div class="exchangeUser">
-                                    <h1>학기초 김어진</h1>
-                                    <img src="img/transfer.svg" alt="exchangeImage">
-                                    <p>2학기 김어진</p>
-                                </div>
-                            </div>
-                            <div class="itemButton">
-                                <div class="forLeftBorder">
-                                    <button class="edit">수정</button>
-                                    <button class="delete">삭제</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="itemList">
-                        <p class="itemDate">2018년 06년 09일</p>
-                        <div class="item">
-                            <div class="userFace">
-                                <img src="https://cdn.faceplusplus.com/mc-official/scripts/demoScript/images/demo-pic4.jpg" alt="userFace">
-                            </div>
-                            <div class="userRelation">
-                                <div class="itemLocation">
-                                    <img src="img/maps-and-flags.svg" alt="marker">
-                                    <p>대전광역시 유성구 장동</p>
-                                </div>
-                                <div class="exchangeUser">
-                                    <h1>학기초 김어진</h1>
-                                    <img src="img/transfer.svg" alt="exchangeImage">
-                                    <p>2학기 김어진</p>
-                                </div>
-                            </div>
-                            <div class="itemButton">
-                                <div class="forLeftBorder">
-                                    <button class="edit">수정</button>
-                                    <button class="delete">삭제</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="itemList">
-                        <p class="itemDate">2018년 06년 09일</p>
-                        <div class="item">
-                            <div class="userFace">
-                                <img src="https://cdn.faceplusplus.com/mc-official/scripts/demoScript/images/demo-pic4.jpg" alt="userFace">
-                            </div>
-                            <div class="userRelation">
-                                <div class="itemLocation">
-                                    <img src="img/maps-and-flags.svg" alt="marker">
-                                    <p>대전광역시 유성구 장동</p>
-                                </div>
-                                <div class="exchangeUser">
-                                    <h1>학기초 김어진</h1>
-                                    <img src="img/transfer.svg" alt="exchangeImage">
-                                    <p>2학기 김어진</p>
-                                </div>
-                            </div>
-                            <div class="itemButton">
-                                <div class="forLeftBorder">
-                                    <button class="edit">수정</button>
-                                    <button class="delete">삭제</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="itemList">
-                        <p class="itemDate">2018년 06년 09일</p>
-                        <div class="item">
-                            <div class="userFace">
-                                <img src="https://cdn.faceplusplus.com/mc-official/scripts/demoScript/images/demo-pic4.jpg" alt="userFace">
-                            </div>
-                            <div class="userRelation">
-                                <div class="itemLocation">
-                                    <img src="img/maps-and-flags.svg" alt="marker">
-                                    <p>대전광역시 유성구 장동</p>
-                                </div>
-                                <div class="exchangeUser">
-                                    <h1>학기초 김어진</h1>
-                                    <img src="img/transfer.svg" alt="exchangeImage">
-                                    <p>2학기 김어진</p>
-                                </div>
-                            </div>
-                            <div class="itemButton">
-                                <div class="forLeftBorder">
-                                    <button class="edit">수정</button>
-                                    <button class="delete">삭제</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="itemList">
-                        <p class="itemDate">2018년 06년 09일</p>
-                        <div class="item">
-                            <div class="userFace">
-                                <img src="https://cdn.faceplusplus.com/mc-official/scripts/demoScript/images/demo-pic4.jpg" alt="userFace">
-                            </div>
-                            <div class="userRelation">
-                                <div class="itemLocation">
-                                    <img src="img/maps-and-flags.svg" alt="marker">
-                                    <p>대전광역시 유성구 장동</p>
-                                </div>
-                                <div class="exchangeUser">
-                                    <h1>학기초 김어진</h1>
-                                    <img src="img/transfer.svg" alt="exchangeImage">
-                                    <p>2학기 김어진</p>
-                                </div>
-                            </div>
-                            <div class="itemButton">
-                                <div class="forLeftBorder">
-                                    <button class="edit">수정</button>
-                                    <button class="delete">삭제</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="itemList">
-                        <p class="itemDate">2018년 06년 09일</p>
-                        <div class="item">
-                            <div class="userFace">
-                                <img src="https://cdn.faceplusplus.com/mc-official/scripts/demoScript/images/demo-pic4.jpg" alt="userFace">
-                            </div>
-                            <div class="userRelation">
-                                <div class="itemLocation">
-                                    <img src="img/maps-and-flags.svg" alt="marker">
-                                    <p>대전광역시 유성구 장동</p>
-                                </div>
-                                <div class="exchangeUser">
-                                    <h1>학기초 김어진</h1>
-                                    <img src="img/transfer.svg" alt="exchangeImage">
-                                    <p>2학기 김어진</p>
-                                </div>
-                            </div>
-                            <div class="itemButton">
-                                <div class="forLeftBorder">
-                                    <button class="edit">수정</button>
-                                    <button class="delete">삭제</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
-
-                <div id="itemProfileInner">
+                <!-- <div id="itemProfileInner">
                     <form id="userProfile">
                         <div id="name">
                             <div><strong>이름</strong></div>
@@ -241,13 +116,58 @@
                     <div id="editUserInfo">
                         <button>회원정보수정<img src="img/edit (2).svg" alt="edit"></button>
                     </div>
-                </div>
-
+                </div> -->
             </div>
-
         </div>
     </div>
+
+    <div id="upload">
+        <div id="inputInfoTitle">상품 등록</div>
+        <form id="inputInfo">
+            <div id="inputInfoLeft" class="inputInfo">
+                <div id="uploadImage">
+                    <p id="imgP"><img id="img" src="" /></p>
+                    <p id="fileP">
+                        <label id="baseFileLabel" for="baseFile">업로드</label>
+                        <input type="file" title="" id="baseFile" accept=".jpg, .jpeg, .png, .svg" multiple />
+                        <button type="button" id="deleteFile" onclick="deleteImage();">삭제</button>
+                    </p>
+                    <div id="source" style="width:100%; word-break:break-all;"></div>
+                </div>
+            </div>
+            <div id="inputInfoRight" class="inputInfo">
+                <div id="category">
+                    <div>카테고리</div>
+                    <select name="selectCategory" id="selectCategory" onchange="selectChange(); cateChange();">
+                        <option value="카테고리" selected disabled>카테고리</option>
+                        <option value="과일">과일</option>
+                        <option value="채소">야채/채소</option>
+                        <option value="기타">기타</option>
+                    </select>
+                    <input id="otherItem" type="text" placeholder="기타 상품을 입력하세요">
+                </div>
+                <div id="itemName">
+                    <div>상품명</div>
+                    <input id="itemTitle" type="text" placeholder="상품명을 입력하세요(사과)" />
+                </div>
+                <div id="buyDate">
+                    <div>구매 날짜</div>
+                    <input placeholder="구매 날을 정확히 입력하세요(2019.08.31)" id="itemDate" />
+                </div>
+                <div id="explain">
+                    <div>설명</div>
+                    <textarea placeholder="상품에 대한 설명을 적으세요" id="itemContent"></textarea>
+                </div>
+            </div>
+        </form>
+        <div id="itemButton">
+            <button type="button" id="cancle">취소</button>
+            <button type="button" id="finish" onclick="uploadFinish();">상품 등록</button>
+        </div>
+    </div>
+
     <script src="js/mypage.js"></script>
+    <script src="js/upload.js"></script>
 </body>
 
 </html>

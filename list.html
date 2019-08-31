@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>list</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <div id="header">
+        <div class="MainHeaderDiv">
+            <div class="MainHeaderLogoDiv">
+                <img src="img/logo_coral.png" class="MainLogo" />
+            </div>
+            <div class="MainHeaderSearchDiv">
+                <div class="MainHeaderSearchInputDiv">
+                    <input type="text" class="MainHeaderSearchInput" placeholder="상품 검색" />
+                    <div class="MainHeaderSearchInputIconDiv">
+                        <img src="img/lens.png" class="MainSearchInputIcon" />
+                    </div>
+                </div>
+            </div>
+            <div class="MainHeaderButtonDiv">
+                <input type="button" value="등록하기" class="MainheaderButtonDiv" />
+                <input type="button" value="구매하기" class="MainheaderButtonDiv" />
+                <input type="button" value="마이페이지" class="MainheaderButtonDiv" />
+                <!-- <input type="button" value="로그인" class="MainheaderButtonDiv" />
+                    <input type="button" value="회원가입" class="MainheaderButtonDiv" /> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="list">
+        <div id="listTop">
+            <div id="listTopTitle">상품보기</div>
+            <div>
+                <select id="listSelete">
+                    <option value="과일">과일</option>
+                    <option value="야채/채소">야채/채소</option>
+                    <option value="기타">기타</option>
+                </select>
+            </div>
+        </div>
+        <div id="listBottom">
+
+            <div class="list">
+                <div class="listBottomTitle">
+                    <img src="img/아이콘/마커_2.png" alt="marker">
+                    <span>대전광역시 유성구</span>
+                </div>
+                <div class="listItem">
+                    <div class="ListElement">
+                        <div class="ListElementImg">
+                            <img src="img/아이콘/프로필사진.png" />
+                        </div>
+                        <div class="ListElementText">
+                            <div class="flexDiv">
+                                <div class="ListElementNameDiv">
+                                    <p class="ListElementName">딸..기</p>
+                                </div>
+                                <div class="ListElementBuyDayDiv">
+                                    <p class="ListElementBuyDayText">구매날짜</p>
+                                    <p class="ListElementBuyDate">2019-08-31</p>
+                                </div>
+                            </div>
+                            <div class="ListElementPointDiv">
+                                <span class="ListElementPoint">123,456,789</span><span class="point">point</span>
+                            </div>
+                            <div class="ListElementAdderssDiv">
+                                <img src="/img/아이콘/마커_3.png" />
+                                <p class="ListElementAddress">대전광역시 유성구 장동</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
