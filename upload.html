@@ -7,65 +7,58 @@
     <title>upload page</title>
     <link rel="stylesheet" href="css/upload.css">
     <link rel="stylesheet" href="css/reset.css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
     
     <div id="upload">
 
-        <div class="inputInfoTitle">정보 입력</div>
+        <div id="inputInfoTitle">상품 등록</div>
         <form id="inputInfo">
             <div id="inputInfoLeft" class="inputInfo">
-                <div id="category">
-                    <div>카테고리</div>
-                    <select name="selectCategory" id="selectCategory">
-                        <option value="카테고리" selected disabled>카테고리</option>
-                        <option value="가전제품">가전제품</option>
-                        <option value="생활용품">생활용품</option>
-                        <option value="기타">기타</option>
-                    </select>
-                </div>
-                <div id="itemName">
-                    <div>상품명</div>
-                    <input type="text" placeholder="상품명을 입력하세요"/>
-                </div>
-                <div id="price">
-                    <div>가격</div>
-                    <input type="text" placeholder="가격"/>
-                    <div id="deliverPrice">
-                        <input id="checkbox" type="checkbox" />
-                        <label for="checkbox">택배비 포함</label>
-                    </div>
-                </div>
-                <div id="explain">
-                    <div>설명</div>
-                    <textarea placeholder="상품에 대한 설명을 적으세요" name="" id=""></textarea>
+
+                <div id="uploadImage">
+                    <p id="imgP"><img id="img" src="" /></p>
+                    <p id="fileP">
+                        <label id="baseFileLabel" for="baseFile">업로드</label>
+                        <input type="file" title="" id="baseFile" accept=".jpg, .jpeg, .png, .svg" multiple/>
+                        <button type="button" id="deleteFile" onclick="deleteImage();">삭제</button>
+                    </p>
+                    <div id="source" style="width:100%; word-break:break-all;"></div>
                 </div>
             </div>
 
             <div id="inputInfoRight" class="inputInfo">
-                <div id="exchangeItem">
-                    <div>교환상품</div>
-                    <input type="text" placeholder="교환을 원하시는 상품"/>
+                <div id="category">
+                    <div>카테고리</div>
+                    <select name="selectCategory" id="selectCategory" onchange="selectChange(); cateChange();">
+                        <option value="카테고리" selected disabled>카테고리</option>
+                        <option value="과일">과일</option>
+                        <option value="채소">야채/채소</option>
+                        <option value="기타">기타</option>
+                    </select>
+                    <input id="otherItem" type="text" placeholder="기타 상품을 입력하세요">
+                </div>
+                <div id="itemName">
+                    <div>상품명</div>
+                    <input id="itemTitle" type="text" placeholder="상품명을 입력하세요(사과)" />
+                </div>
+                <div id="buyDate">
+                    <div>구매 날짜</div>
+                    <input placeholder="구매 날을 정확히 입력하세요(2019.08.31)" id="itemDate" />
                 </div>
                 <div id="explain">
                     <div>설명</div>
-                    <textarea placeholder="상품에 대한 설명을 적으세요"></textarea>
-                </div>
-                <div id="relativeTag">
-                    <div>연관태그</div>
-                    <input type="text" placeholder="ex) #선풍기..."/>
-                </div>
-                <div id="itemMount">
-                    <div>수량</div>
-                    <input type="text" placeholder="1"/>
+                    <textarea placeholder="상품에 대한 설명을 적으세요" id="itemContent"></textarea>
                 </div>
             </div>
 
         </form>
 
-
-        <div id="uploadImage">
-            
+        <div id="itemButton">
+            <button type="button" id="cancle">취소</button>
+            <button type="button" id="finish" onclick="uploadFinish();">상품 등록</button>
         </div>
     </div>
 
