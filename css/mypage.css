@@ -56,8 +56,10 @@
     border: 1px solid #707070;
     background-color: #fff;
 }
-
-#itemInfoInner, #itemProfileInner {
+#itemWrap > div {
+    display: none;
+}
+#itemInfoInner, .itemProfileInner {
     text-align: left;
     padding: 20px 50px;
     height: 25rem;
@@ -113,6 +115,8 @@
     border-radius: 10px 0 0 10px;
 }
 .userRelation {
+    text-align: left;
+    width: 250px;
     margin: 0 30px;
 }
 .itemLocation {
@@ -125,28 +129,13 @@
     line-height: 30px;
 }
 .itemLocation > p {
-    font-size: 5px;
+    font-size: 10px;
     line-height: 30px;
     color: #797979;
 }
-.exchangeUser {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.exchangeUser > img {
-    width: 30px;
-    margin: 0 10px;
-}
-.exchangeUser > p, .exchangeUser > h1 {
-    font-size: 20px;
-}
 .exchangeUser > h1 {
+    font-size: 20px;
     font-weight: 500;
-}
-.exchangeUser > p {
-    color: #ff6356;
-    font-weight: 300;
 }
 .itemButton {
     display: flex;
@@ -154,10 +143,12 @@
     align-items: center;
 }
 .forLeftBorder {
+    width: 150px;
     height: 50px;
     line-height: 50px;
     padding-left: 20px;
     border-left: 1px solid black;
+    text-align: right;
 }
 .itemButton > .forLeftBorder > button {
     border: 0;
@@ -202,6 +193,8 @@
     font-size: 13px;
     outline: none;
     border: 0;
+    border-bottom: 1px solid #575757;
+    padding-bottom: 7px;
 }
 #userProfile > div > input::placeholder {
     color: #f88379;
@@ -214,13 +207,17 @@
     color: #f9f9f9;
     border: 0;
     border-radius: 15px;
-    padding: 5px 10px;
-    margin-top: 30px;
+    padding: 5px 20px;
+    margin: 30px 10px 0;
     outline: none;
     cursor: pointer;
     font-weight: 100;
     font-size: 15px;
     box-shadow: 0 0 3px #707070;
+}
+#editCancel {
+    background-color: #fff !important;
+    color: #0e0e0e !important;
 }
 #editUserInfo > button > img {
     width: 10px;

@@ -62,8 +62,8 @@
     padding: 0 10px 7px 10px;
     border: 1px solid #70707070;
     border-radius: 0 0 10px 10px;
-    .ListElementText > div {
 }
+.ListElementText > div {
     margin-top: 20px;
 }
 .flexDiv {

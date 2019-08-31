@@ -37,17 +37,33 @@
                     </select>
                     <input id="otherItem" type="text" placeholder="기타 상품을 입력하세요">
                 </div>
+                <div id="locationX">
+                    <div>위치</div>
+                    <select name="selectLocation" id="selectLocationX">
+                        <option value="NULL" disabled selected>선택</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                    </select>
+                </div>
+                <div id="locationY">
+                    <div></div>
+                    <select name="selectLocation" id="selectLocationY">
+                        <option value="NULL" disabled selected>선택</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
                 <div id="itemName">
                     <div>상품명</div>
                     <input id="itemTitle" type="text" placeholder="상품명을 입력하세요(사과)" />
                 </div>
                 <div id="buyDate">
                     <div>구매 날짜</div>
-                    <input placeholder="구매 날을 정확히 입력하세요(2019.08.31)" id="itemDate" />
-                </div>
-                <div id="explain">
-                    <div>설명</div>
-                    <textarea placeholder="상품에 대한 설명을 적으세요" id="itemContent"></textarea>
+                    <input type="date" placeholder="구매 날을 정확히 입력하세요(2019.08.31)" id="itemDate" />
                 </div>
             </div>
         </form>

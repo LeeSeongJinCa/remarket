@@ -1,41 +1,27 @@
-window.onload = () => {
-    let page = localStorage.getItem('listPage');
-    if(page == 1) {
-        categoryClassChange(CurrentSale, myInfo);
-        itemDisplay(itemInfoInner, itemProfileInner);
-    } else if(page == 2){
-        categoryClassChange(myInfo, CurrentSale);
-        itemDisplay(itemProfileInner, itemInfoInner);
-    } else {
-        console.log(page);
-        return console.log('Error');
-    }
-}
-
 const myInfo = document.getElementById('categoryMyInfo');
 const CurrentSale = document.getElementById('categoryCurrentSale');
 const itemWrap = document.getElementById('itemWrap');
 const itemInfoInner = document.getElementById('itemInfoInner');
-const itemProfileInner = document.getElementById('itemProfileInner');
+const itemProfileInner = document.getElementsByClassName('itemProfileInner');
+const edit = document.getElementById('edit');
+const editCancel = document.getElementById('editCancel');
 
-function categoryClassChange(from, to) {
+function itemReset() {
+    for(let i = 0; i < itemProfileInner.length; i++) {
+        itemProfileInner[i].style.display = "none";
+    }
+    itemInfoInner.style.display = "none";
+}
+function itemBlock(tag) {
+    itemReset();
+    tag.style.display = "block";
+}
+function itemClicked(from, to) {
     from.classList.remove('clicked');
     to.classList.add('clicked');
 }
 
-function itemDisplay(from, to) {
-    from.style.display = "none";
-    to.style.display = "block";
+window.onload = () => {
+    itemBlock(itemProfileInner[0]);
+    itemClicked(CurrentSale, myInfo);
 }
-
-myInfo.addEventListener('click', () => {
-    categoryClassChange(CurrentSale, myInfo);
-    itemDisplay(itemInfoInner, itemProfileInner);
-    localStorage.setItem('listPage', 1);
-});
-CurrentSale.addEventListener('click', () => {
-    categoryClassChange(myInfo, CurrentSale);
-    itemDisplay(itemProfileInner, itemInfoInner);
-    localStorage.setItem('listPage', 2);
-});
-
